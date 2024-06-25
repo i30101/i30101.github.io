@@ -1,0 +1,84 @@
+/**
+ * Author: Andrew Kim
+ * Since: 24 June 2024
+ * Verison: 2.0.0
+ */
+
+
+/* ---------------- PAGE SETUP ---------------- */
+body {
+    margin: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+
+/* ----------------CONTENTS ---------------- */
+#main-container {
+    margin: 0;
+    width: 100vh;
+    height: 100vh;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+#main-content {
+    max-width: 800px;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    color: white;
+    text-align: center;
+}
+
+#title {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.book {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.finish {
+    font-size: 10px;
+}
+
+
+
+/* ---------------- MEDIA QUERIES ----------------  */
+@media (min-width: 768px) {
+    #main-content {
+        max-width: 800px;
+        padding: 20px;
+
+    }
+}
+
+@media (max-width: 767px) {
+    #main-content {
+        width: 94%;
+        padding: 5px;
+    }
+}
