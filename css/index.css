@@ -19,4 +19,22 @@ canvas {
 #main-content {
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
+    max-width: 800px;
+
+}
+
+/* ---------------- MEDIA QUERIES ----------------  */
+@media (min-width: 768px) {
+    #main-content {
+        max-width: 800px;
+        padding: 20px;
+
+    }
+}
+
+@media (max-width: 767px) {
+    #main-content {
+        width: 94%;
+        padding: 5px;
+    }
 }

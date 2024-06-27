@@ -1,0 +1,89 @@
+/**
+ * Author: Andrew Kim
+ * Since: 25 June 2024
+ * Verison: 2.0.0
+ */
+
+
+body {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#main-content {
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    font-family: 'Figtree', monospace;
+}
+
+#title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.section {
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px;
+
+    background-color: rgba(80, 80, 80, 0.3);
+    max-width: 800px;
+    border-radius: 8px;
+    backdrop-filter: blur(3px);
+}
+
+.book {
+    margin-bottom: 15px;
+}
+
+.book-title {
+    font-style: italic;
+}
+
+progress {
+    border-radius: 10px; 
+    width: 80%;
+    height: 15px;
+    /* margin-left: -11.5%; */
+    margin-bottom: -2px;
+    margin-right: 10px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: rgb(101, 101, 101);
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: rgb(0, 180, 0);
+    border-radius: 10px;
+    /* box-shadow: 1px 1px 5px 3px rgba( 255, 0, 0, 0.8 ); */
+}
+
+
+/* ---------------- MEDIA QUERIES ----------------  */
+@media (min-width: 768px) {
+    body {
+        background-image: url("../assets/hikindg-wide.jpg");
+        /* background-color: black; */
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        background-image: url("../assets/hiking.jpg");
+        /* background-color: black; */
+    }
+}
