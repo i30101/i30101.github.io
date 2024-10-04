@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    font-family: "Press Start 2P", sans-serif;
+    text-align: center;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+#text {
+    padding: 20px;
+    border: 8px solid #6f87f1;
+    background-color: white;
+    color: #7370b5;
+    width: 340px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 180%;
+    margin-top: 20%;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#noButton {
+    position: absolute;
+}
+
+.button {
+    padding: 10px;
+    border-radius: 0;
+    background-color: #fbddf3;
+    border: 8px solid #6f87f1;
+    color: #f49194;
+}
+
+.yes-text {
+    padding: 10px;
+    color: #f49194;
+    font-size: 16px;
+}
+
+.spacer {
+    height: 100px;
+}
