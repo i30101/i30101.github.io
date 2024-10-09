@@ -51,8 +51,6 @@ updatePositionStyle();
  * Move no button
  */
 function updatePosition() {
-    console.log("updating position");
-    
     x += velocityX;
     y += velocityY;
 
