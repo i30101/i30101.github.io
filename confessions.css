@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    font-family: "Computer Modern Serif", sans-serif !important;
+}
+
+#main {
+    max-width: 800px;
+    margin: 0 auto 200px auto;
+    padding: 5px;
+}
+
+.title {
+    margin: 80px auto 0 auto;
+    text-align: center;
+}
+
+.section {
+    margin-top: 80px;
+}
