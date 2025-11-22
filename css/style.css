@@ -1,52 +1,61 @@
-* {
-    box-sizing: border-box;
-    font-family: "Press Start 2P", sans-serif;
+/**
+ * Author: Andrew Kim
+ * Since: 25 June 2024
+ * Verison: 2.0.0
+ */
+
+/* ---------------- PAGE SETUP ---------------- */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+
+/* ----------------CONTENTS ---------------- */
+#main-container {
+    margin: 0;
+    width: 100vh;
+    height: 100vh;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+#main-content {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(2px);
     text-align: center;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
+#title {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
-#text {
-    padding: 20px;
-    border: 8px solid #6f87f1;
-    background-color: white;
-    color: #7370b5;
-    width: 340px;
-    margin: auto;
-    font-size: 20px;
-    line-height: 180%;
-    margin-top: 20%;
+.section-title {
     margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 800;
 }
 
-a {
-    text-decoration: none;
+.section {
+    margin-bottom: 50px;
+}
+
+.book {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.finish {
+    font-size: 10px;
 }
 
 
-#noButton {
-    position: absolute;
-}
 
-.button {
-    padding: 10px;
-    border-radius: 0;
-    background-color: #fbddf3;
-    border: 8px solid #6f87f1;
-    color: #f49194;
-}
-
-.yes-text {
-    padding: 10px;
-    color: #b86b6e;
-    font-size: 16px;
-}
-
-.spacer {
-    height: 100px;
-}
