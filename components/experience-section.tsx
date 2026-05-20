@@ -32,7 +32,7 @@ export function ExperienceSection() {
       id="experience"
       className="mx-auto min-h-screen max-w-3xl px-6 py-24"
     >
-      <h2 className="mb-12 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+      <h2 className="font-heading mb-12 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
         Experience
       </h2>
       <Accordion type="single" collapsible className="w-full">

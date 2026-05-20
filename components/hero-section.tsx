@@ -6,7 +6,7 @@ export function HeroSection() {
       id="home"
       className="flex min-h-screen flex-col items-center justify-center px-6 text-center"
     >
-      <h1 className="text-balance text-6xl font-bold tracking-tight text-foreground sm:text-7xl md:text-8xl lg:text-9xl">
+      <h1 className="font-heading text-balance text-6xl font-bold tracking-tight text-foreground sm:text-7xl md:text-8xl lg:text-9xl">
         Andrew Kim
       </h1>
       <p className="mt-4 text-lg font-medium tracking-wide text-muted-foreground sm:text-xl">

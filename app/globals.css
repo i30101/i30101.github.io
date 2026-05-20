@@ -87,6 +87,11 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .font-heading {
+    font-family: var(--font-jetbrains-mono), var(--font-sans);
+    font-weight: 700;
+  }
 }
 
 @layer utilities {

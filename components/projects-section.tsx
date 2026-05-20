@@ -33,7 +33,7 @@ const projects = [
 export function ProjectsSection() {
   return (
     <section id="projects" className="mx-auto min-h-screen max-w-5xl px-6 py-24">
-      <h2 className="mb-12 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+      <h2 className="font-heading mb-12 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
         Projects
       </h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -46,7 +46,7 @@ export function ProjectsSection() {
           >
             <div className="flex items-start justify-between">
               <h3
-                className={`font-semibold tracking-tight text-foreground transition-colors group-hover:text-primary ${
+                className={`font-heading font-semibold tracking-tight text-foreground transition-colors group-hover:text-primary ${
                   project.featured ? 'text-2xl' : 'text-lg'
                 }`}
               >
