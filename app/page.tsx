@@ -15,9 +15,6 @@ export default function Home() {
         <AboutSection />
         <ExperienceSection />
         <ProjectsSection />
-        <footer className="pb-24 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Andrew Kim. All rights reserved.</p>
-        </footer>
       </div>
     </main>
   )

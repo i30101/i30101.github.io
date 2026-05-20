@@ -10,10 +10,10 @@ export function HeroSection() {
       className="h-screen w-full snap-start snap-always flex flex-col justify-center"
     >
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
-        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.4, ease: 'easeOut' }}
+        viewport={{ once: false, amount: 0.1 }}
         className="flex flex-col items-center px-6 text-center"
       >
         <h1 className="font-heading text-balance text-6xl font-bold tracking-tight text-foreground sm:text-7xl md:text-8xl lg:text-9xl">

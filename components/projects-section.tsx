@@ -38,10 +38,10 @@ export function ProjectsSection() {
       className="h-screen w-full snap-start snap-always flex flex-col justify-center"
     >
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
-        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.4, ease: 'easeOut' }}
+        viewport={{ once: false, amount: 0.1 }}
         className="mx-auto w-full max-w-5xl px-6 py-24"
       >
         <h2 className="font-heading mb-12 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
