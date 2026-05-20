@@ -89,6 +89,56 @@
   }
 }
 
+@layer utilities {
+  .interactive-dot-grid {
+    --dot-size: 1px;
+    --dot-gap: 24px;
+    --dot-color: rgba(243, 244, 246, 0.08);
+    --dot-accent: rgba(251, 191, 36, 0.4);
+    --spotlight-size: 240px;
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+  }
+
+  .interactive-dot-grid::before,
+  .interactive-dot-grid::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+
+  .interactive-dot-grid::before {
+    background-image: radial-gradient(
+      circle at var(--dot-size) var(--dot-size),
+      var(--dot-color) var(--dot-size),
+      transparent 0
+    );
+    background-size: var(--dot-gap) var(--dot-gap);
+    opacity: 0.9;
+  }
+
+  .interactive-dot-grid::after {
+    background-image: radial-gradient(
+      circle at var(--dot-size) var(--dot-size),
+      var(--dot-accent) var(--dot-size),
+      transparent 0
+    );
+    background-size: var(--dot-gap) var(--dot-gap);
+    -webkit-mask-image: radial-gradient(
+      var(--spotlight-size) circle at var(--mouse-x) var(--mouse-y),
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 70%
+    );
+    mask-image: radial-gradient(
+      var(--spotlight-size) circle at var(--mouse-x) var(--mouse-y),
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 70%
+    );
+    mix-blend-mode: screen;
+    opacity: 0.95;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
