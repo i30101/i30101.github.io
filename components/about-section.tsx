@@ -6,7 +6,7 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="flex min-h-[100svh] w-full flex-col justify-center py-16 md:h-screen md:snap-start md:snap-always md:py-0"
+      className="flex min-h-svh w-full flex-col justify-center py-16 md:h-screen md:snap-start md:snap-always md:py-0"
     >
       <div
         data-reveal

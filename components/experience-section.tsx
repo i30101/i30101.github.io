@@ -24,7 +24,7 @@ const experiences: Experience[] = [
     dates: '2025 - Present',
     description:
       <>
-        Developer in the University of Pennsylvania's in student-run {' '} <a href="https://pennlabs.org/" target="_blank" rel="noopener noreferrer">dev team</a> maintaining products used by thousands of Penn students every month. Enhanced usability of Penn Course Plan, a schedule building tool, and contributed as a core developer to Penn Marketplace, an upcoming peer-to-peer e-commerce platform for the Penn community.',
+        Developer in the University of Pennsylvania's in student-run {' '} <a href="https://pennlabs.org/" target="_blank" rel="noopener noreferrer">dev team</a> maintaining products used by thousands of Penn students every month. Enhanced usability of Penn Course Plan, a schedule building tool, and contributed as a core developer to Penn Marketplace, an upcoming peer-to-peer e-commerce platform for the Penn community.
       </>
   },
   {
@@ -44,16 +44,6 @@ const experiences: Experience[] = [
     dates: '2023 - 2024',
     description: (
       <>
-        Add your research summary here. You can now include inline repo links
-        such as{' '}
-        <a
-          href="https://github.com/your-username/your-repo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          this GitHub project
-        </a>
-        .
       </>
     ),
   }
@@ -63,7 +53,7 @@ export function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="flex min-h-[100svh] w-full flex-col justify-center py-16 md:h-screen md:snap-start md:snap-always md:py-0"
+      className="flex min-h-svh w-full flex-col justify-center py-16 md:h-screen md:snap-start md:snap-always md:py-0"
     >
       <div
         data-reveal
