@@ -34,7 +34,7 @@ const experiences: Experience[] = [
     dates: 'Summer 2024, 2025',
     description:
       <>
-        Spent two summers as a full-time researcher at the U.S. Naval Research Laboratory in Washington, D.C. Built CrystalEyes, an image analysis platform that automates extraction of ice crystal morphology data. CrystalEyes rapidly evaluates antifreeze proteins that have potential applications in organ and tissue cryopreservation. Published in the {' '}<a href="https://pubs.acs.org/doi/full/10.1021/acsanm.5c00031" target="_blank" rel="noopener noreferrer">American Chemical Society</a> and awarded Best Presentation for the Optical Physics Branch. Check out the dev portfolio {' '} <a href="public/andrew-dev-sample.pdf" target="_blank" rel="noopener noreferrer">here</a>.
+        Spent two summers as a full-time researcher at the U.S. Naval Research Laboratory in Washington, D.C. Built CrystalEyes, an image analysis platform that automates extraction of ice crystal morphology data. CrystalEyes rapidly evaluates antifreeze proteins that have potential applications in organ and tissue cryopreservation. Published in the {' '}<a href="https://pubs.acs.org/doi/full/10.1021/acsanm.5c00031" target="_blank" rel="noopener noreferrer">American Chemical Society</a> and awarded Best Presentation for the Optical Physics Branch. Check out the dev portfolio {' '} <a href="/andrew-dev-sample.pdf" target="_blank" rel="noopener noreferrer">here</a>.
     </>
   },
   {
