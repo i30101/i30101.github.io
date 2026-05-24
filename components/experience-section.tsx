@@ -24,7 +24,7 @@ const experiences: Experience[] = [
     dates: '2025 - Present',
     description:
       <>
-        Developer in the University of Pennsylvania's in student-run {' '} <a href="https://pennlabs.org/" target="_blank" rel="noopener noreferrer">dev team</a> maintaining products used by thousands of Penn students every month. Enhanced usability of Penn Course Plan, a schedule building tool, and contributed as a core developer to Penn Marketplace, an upcoming peer-to-peer e-commerce platform for the Penn community.
+        Developer in the University of Pennsylvania's in student-run {' '} <a href="https://pennlabs.org/" target="_blank" rel="noopener noreferrer">dev team</a> maintaining products used by thousands of Penn students every month. Enhanced the usability of Penn Course Plan, a schedule building tool, and contributed as a core developer to Penn Marketplace, an upcoming peer-to-peer e-commerce platform for the Penn community.
       </>
   },
   {
