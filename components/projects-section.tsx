@@ -127,13 +127,13 @@ export function ProjectsSection() {
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
                   {project.tech.map((tech) => (
-                    <Badge
-                      key={tech}
-                      variant="outline"
-                      className="border-border/50 bg-transparent text-muted-foreground transition-colors duration-200 hover:border-primary/50 hover:text-primary"
-                    >
-                      {tech}
-                    </Badge>
+                  <Badge
+                    key={tech}
+                    variant="outline"
+                    className="border-border/50 bg-transparent text-muted-foreground transition-colors duration-200 group-hover:border-primary/50 group-hover:text-primary"
+                  >
+                    {tech}
+                  </Badge>
                   ))}
                 </div>
               </>
