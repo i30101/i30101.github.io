@@ -23,16 +23,17 @@ const projects: Project[] = [
     id: '1',
     title: 'CrystalEyes',
     description:
-      'A comprehensive search engine for mechanical keyboard parts, helping enthusiasts find the perfect components for their custom builds.      . Developed CrystalEyes, an image analysis platform for classifying and quantifiying microscopic ice crystals. Implemented crystal segmentation pipelines using Cellpose and OpenCV to extract morphometric data, automating previously manual workflows and reducing processing time by 95%. Built interactive GUI Tkinter Matplotlib, enabling users to preview, analyze, and export extracted data, and a binary file parser to extract JPEGs and experiment metadata from proprietary instrument formats.',
+      'An image analysis platform that automates the extraction of morphometric data from nano-ice crystal microscopy. The stack includes Cellpose for contour segmenetation, OpenCV for image processing, a custom binary parser for decoding proprietary instrument files, and a Tkinter/Matplotlib GUI for real-time video playback, graphing, and data export. CrystalEyes fully automates a previously manual process and reduces processing time by over 95%, while also unlocking temporal tracking of crystal size and shape that was infeasible at scale. This work contributed to a publication by the American Chemical Society in March 2025.',
     tech: ['Python', 'PyTorch', 'Cellpose', 'Matplotlib', 'NumPy', 'Tkinter', 'Linkam'],
     featured: true,
+    href: 'https://github.com/i30101/CrystalEyes'
   },
   {
     id: '2',
-    title: 'Shopii',
-    description:
-      'AI-powered browser extension that helps users find the best deals and alternatives while shopping online.',
-    tech: ['React', 'Chrome Extension', 'OpenAI', 'Node.js'],
+    title: 'woodsonscioly.org',
+    description: 
+      'Founding developer of C. G. Woodson High School\'s Science Olympiad team, reaching 11k+ impressions. Developed modular React components for event listings, team bios, competition results. Created a custom Markdown parser to automate blog post rendering.',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL'],
     featured: false,
   },
   {
@@ -45,10 +46,10 @@ const projects: Project[] = [
   },
   {
     id: '4',
-    title: 'woodsonscioly.org',
-    description: 
-      'A comprehensive search engine for mechanical keyboard parts, helping enthusiasts find the perfect components for their custom builds.',
-    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL'],
+    title: 'Shopii',
+    description:
+      'AI-powered browser extension that helps users find the best deals and alternatives while shopping online.',
+    tech: ['React', 'Chrome Extension', 'OpenAI', 'Node.js'],
     featured: false,
   },
   {
@@ -61,9 +62,9 @@ const projects: Project[] = [
   },
   {
     id: '6',
-    title: 'woodsonscioly.org',
+    title: 'thocc.works',
     description: 
-      '',
+      'A comprehensive search engine for mechanical keyboard parts, helping enthusiasts find the perfect components for their custom builds.',
     tech: [],
     featured: false,
   }

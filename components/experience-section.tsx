@@ -23,7 +23,9 @@ const experiences: Experience[] = [
     company: 'Penn Labs',
     dates: '2025 - Present',
     description:
-      'Developing and maintaining web applications for the University of Pennsylvania community. Building responsive, accessible interfaces using React, TypeScript, and modern CSS. Collaborating with designers and backend engineers to deliver impactful products used by thousands of students.',
+      <>
+        Developer in the University of Pennsylvania's in student-run {' '} <a href="https://pennlabs.org/" target="_blank" rel="noopener noreferrer">dev team</a> maintaining products used by thousands of Penn students every month. Enhanced usability of Penn Course Plan, a schedule building tool, and contributed as a core developer to Penn Marketplace, an upcoming peer-to-peer e-commerce platform for the Penn community.',
+      </>
   },
   {
     id: '2',
@@ -32,7 +34,7 @@ const experiences: Experience[] = [
     dates: 'Summer 2024, 2025',
     description:
       <>
-        Spent two summers as a full-time researcher at the U.S. Naval Research Laboratory in Washington, D.C. Built {' '} <a href="https://github.com/i30101/CrystalEyes" target="_blank" rel="noopener noreferrer">CrystalEyes</a>, an image analysis platform that automates extraction of ice crystal morphology data. CrystalEyes rapidly evaluates antifreeze proteins that have potential applications in organ and tissue cryopreservation. Published in the {' '}<a href="https://pubs.acs.org/doi/full/10.1021/acsanm.5c00031" target="_blank" rel="noopener noreferrer">American Chemical Society</a> and awarded Best Presentation for the Optical Physics Branch. Check out the dev portfolio {' '} <a href="public/andrew-dev-sample.pdf" target="_blank" rel="noopener noreferrer">here</a>.
+        Spent two summers as a full-time researcher at the U.S. Naval Research Laboratory in Washington, D.C. Built CrystalEyes, an image analysis platform that automates extraction of ice crystal morphology data. CrystalEyes rapidly evaluates antifreeze proteins that have potential applications in organ and tissue cryopreservation. Published in the {' '}<a href="https://pubs.acs.org/doi/full/10.1021/acsanm.5c00031" target="_blank" rel="noopener noreferrer">American Chemical Society</a> and awarded Best Presentation for the Optical Physics Branch. Check out the dev portfolio {' '} <a href="public/andrew-dev-sample.pdf" target="_blank" rel="noopener noreferrer">here</a>.
     </>
   },
   {
