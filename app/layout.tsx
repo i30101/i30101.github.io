@@ -20,8 +20,8 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Andrew Kim | Frontend Developer',
-  description: 'Frontend developer building accessible, pixel-perfect web experiences.',
+  title: 'Andrew Kim | Software Developer',
+  description: 'Software developer building accessible, pixel-perfect web experiences.',
   generator: 'v0.app',
   icons: {
     icon: [

@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import type { ReactNode } from 'react'
 import {
   Accordion,
   AccordionContent,
@@ -8,12 +8,20 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 
-const experiences = [
+type Experience = {
+  id: string
+  role: string
+  company: string
+  dates?: string
+  description: ReactNode
+}
+
+const experiences: Experience[] = [
   {
     id: '1',
     role: 'Frontend Web Developer',
     company: 'Penn Labs',
-    dates: '2023 — Present',
+    dates: '2025 - Present',
     description:
       'Developing and maintaining web applications for the University of Pennsylvania community. Building responsive, accessible interfaces using React, TypeScript, and modern CSS. Collaborating with designers and backend engineers to deliver impactful products used by thousands of students.',
   },
@@ -21,24 +29,43 @@ const experiences = [
     id: '2',
     role: 'Software Engineering Intern',
     company: 'U.S. Navy',
-    dates: 'Summer 2023',
+    dates: 'Summer 2024, 2025',
     description:
-      'Designed and implemented internal tools to streamline data processing workflows. Worked with cross-functional teams to identify pain points and deliver software solutions that improved operational efficiency.',
+      <>
+        Spent two summers as a full-time researcher at the U.S. Naval Research Laboratory in Washington, D.C. Built {' '} <a href="https://github.com/i30101/CrystalEyes" target="_blank" rel="noopener noreferrer">CrystalEyes</a>, an image analysis platform that automates extraction of ice crystal morphology data. CrystalEyes rapidly evaluates antifreeze proteins that have potential applications in organ and tissue cryopreservation. Published in the {' '}<a href="https://pubs.acs.org/doi/full/10.1021/acsanm.5c00031" target="_blank" rel="noopener noreferrer">American Chemical Society</a> and awarded Best Presentation for the Optical Physics Branch. Check out the dev portfolio {' '} <a href="public/andrew-dev-sample.pdf" target="_blank" rel="noopener noreferrer">here</a>.
+    </>
   },
+  {
+    id: '3',
+    role: 'ML Engineer',
+    company: 'Independent research',
+    dates: '2023 - 2024',
+    description: (
+      <>
+        Add your research summary here. You can now include inline repo links
+        such as{' '}
+        <a
+          href="https://github.com/your-username/your-repo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          this GitHub project
+        </a>
+        .
+      </>
+    ),
+  }
 ]
 
 export function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="h-screen w-full snap-start snap-always flex flex-col justify-center"
+      className="flex min-h-[100svh] w-full flex-col justify-center py-16 md:h-screen md:snap-start md:snap-always md:py-0"
     >
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, ease: 'easeOut' }}
-        viewport={{ once: false, amount: 0.1 }}
-        className="mx-auto w-full max-w-3xl px-6 py-24"
+      <div
+        data-reveal
+        className="mx-auto w-full max-w-3xl px-6 py-24 opacity-0 translate-y-14 transition-all duration-700 ease-out will-change-transform motion-reduce:translate-y-0 motion-reduce:opacity-100"
       >
         <h2 className="font-heading mb-12 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           Experience
@@ -53,10 +80,15 @@ export function ExperienceSection() {
               <AccordionTrigger className="group py-6 hover:no-underline">
                 <div className="flex w-full items-center justify-between pr-4">
                   <span className="text-left text-base font-medium text-foreground transition-colors group-hover:text-primary sm:text-lg">
-                    {exp.role}{' '}
-                    <span className="text-muted-foreground">
-                      @ {exp.company}
-                    </span>
+                    {exp.role}
+                    {exp.company ? (
+                      <>
+                        {' '}
+                        <span className="text-muted-foreground">
+                          @ {exp.company}
+                        </span>
+                      </>
+                    ) : null}
                   </span>
                   <span className="shrink-0 text-sm text-muted-foreground">
                     {exp.dates}
@@ -64,14 +96,14 @@ export function ExperienceSection() {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="pb-6">
-                <p className="leading-relaxed text-muted-foreground">
+                <div className="leading-relaxed text-muted-foreground [&_a]:font-medium [&_a]:text-foreground [&_a]:underline [&_a]:underline-offset-4 [&_a]:transition-colors [&_a:hover]:text-primary">
                   {exp.description}
-                </p>
+                </div>
               </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
-      </motion.div>
+      </div>
     </section>
   )
 }

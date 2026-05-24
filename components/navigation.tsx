@@ -10,7 +10,11 @@ const navItems = [
   { label: 'Projects', href: '#projects' },
 ]
 
-export function Navigation() {
+type NavigationProps = {
+  onNavigate?: (sectionId: string) => void
+}
+
+export function Navigation({ onNavigate }: NavigationProps) {
   const [activeSection, setActiveSection] = useState('home')
 
   useEffect(() => {
@@ -40,6 +44,13 @@ export function Navigation() {
           <a
             key={item.href}
             href={item.href}
+            onClick={(event) => {
+              event.preventDefault()
+              const sectionId = item.href.slice(1)
+              setActiveSection(sectionId)
+              onNavigate?.(sectionId)
+              window.history.replaceState(null, '', item.href)
+            }}
             className={cn(
               'rounded-full px-4 py-2 text-sm font-medium transition-all duration-300',
               activeSection === item.href.slice(1)
