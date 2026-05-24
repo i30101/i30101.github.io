@@ -33,7 +33,7 @@ const projects: Project[] = [
     id: '2',
     title: 'woodsonscioly.org',
     description: 
-      'Founding developer of C. G. Woodson High School\'s Science Olympiad team, reaching 11k+ impressions. Developed modular React components for event listings, team bios, and competition results. Created a custom Markdown parser to automate blog post rendering.',
+      'Founding developer of C. G. Woodson High School\'s Science Olympiad team website, reaching 11k+ impressions. Developed modular React components for event listings, team bios, and competition results. Created a custom Markdown parser to automate blog post rendering.',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
     featured: false,
     tall: true,

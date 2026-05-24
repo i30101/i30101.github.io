@@ -44,6 +44,7 @@ const experiences: Experience[] = [
     dates: '2023 - 2024',
     description: (
       <>
+        Used remote sensing data and Deep Neural Networks to predict biochemical oxygen demand in the Chesapeake Bay. Awarded 1st place at Fairfax County Regional Science Fair, 2nd place at Virginia Science Fair, and State Winner and National Finalist for the U.S. Stockholm Junior Water Prize. Presented at MIT's Undergraduate Research Technology Conference and published by {' '}<a href="https://ieeexplore.ieee.org/abstract/document/10937385" target="_blank" rel="noopener noreferrer">IEEE</a>.
       </>
     ),
   }
